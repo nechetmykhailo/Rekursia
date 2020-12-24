@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
 
                 if (day in range) {
                     tvRes.text = factorial(s.toString().toInt()).toString()
+                }else {
+                    tvRes.text = "False"
+                    etNumber.text.clear()
                 }
             }
 
